@@ -10,9 +10,9 @@ describe ('POST de login', () => {
       .send ({usuario: ""})
       .expect('Content-Type', /json/)
       .expect(400)
-    expect(result.body.err).toStrictEqual("incompleto")
-    expect(resul.body.err).toEqual("incompleto")
-    expect(resul.body.err).tobe("incompleto")
+    expect(result.body.console.err).toStrictEqual("incompleto")
+    expect(result.body.err).toEqual("incompleto")
+    expect(result.body.err).tobe("incompleto")
 
   })})
   
